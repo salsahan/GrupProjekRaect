@@ -1,0 +1,25 @@
+
+.list-by-fans {
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(105, 89, 89);
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+
+}
+.link-by-fans{
+  text-decoration: none;
+  display: flex;
+  padding:4px 8px;
+  border:1px solid grey;
+  color:rgb(105, 89, 89);
+}
+.link-by-fans:hover {
+    text-decoration: underline;
+    color:blue;
+}
