@@ -11,10 +11,10 @@
     text-decoration: none;
     font-weight: 600;
     color:#fff;
-    font-size: 24px;
+    font-size: 24pt;
+    font-family: Roboto;
   }
   .nav .favorites{
-    font-size: 14px;
     text-decoration: none;
     color:#fff;
     font-size: 24px;
@@ -76,10 +76,20 @@
     .nav{
       display: flex;
       flex-direction: column;
+      row-gap: 5px;
     }
   }
   @media (max-width:450px){
-  
+    .nav .link-title {
+      font-size: 20pt;
+    }
+    .nav .favorites {
+      font-size: 20px;
+    }
+    .nav .favorites .total-favorites{
+      margin-top: -30px;
+      margin-left: 75px;
+    }
     .handleReset{
       position: absolute;
       margin-left:194px;

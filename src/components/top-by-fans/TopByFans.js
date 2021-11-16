@@ -1,6 +1,7 @@
 import React from "react";
 import "./topbyfans.css";
 import { Link } from "react-router-dom";
+
 const TopByFans = ({ fans }) => {
   return (
     <Link className="link-by-fans" to={`/phone/${fans.slug}`}>

@@ -12,7 +12,6 @@
     transform: scale(1.01);
     background-color: #fff;
     box-shadow: 2px 2px 9px rgba(0,0,0,0.5)
-  
   }
   .wrapp-phone img{
     width: 100%;
@@ -24,9 +23,10 @@
     font-weight: bold;
     height:40px;
     text-align: center;
+    margin-bottom: 0px;
   }
   .wrapp-phone p:hover{
-    color:blue;
+    color:rgb(29, 100, 255);
   }
   
   .link{
@@ -44,21 +44,18 @@
     border-radius:4px;
     box-sizing: border-box;
     width:70%;
-    color:rgb(29, 100, 255);
-    border: 1px solid rgb(29, 100, 255);
+    color: dodgerblue;
+    border: 1px solid rgbdodgerblue;
     transition:.5s ease-in-out;
-  
   }
   .fav-phone-latest:hover {
-    background-color:rgb(29, 100, 255);
-  
+    background-color:dodgerblue;
     color:#fff;
   }
   
   @media(max-width:450px){
     .fav-phone-latest{
       padding:8px 4px;
-  
     }
   }
   

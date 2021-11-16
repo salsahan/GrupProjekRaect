@@ -12,7 +12,7 @@
     position: relative;
     box-sizing: border-box;
     flex-direction: column;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     justify-content: center;
     border:1px solid rgb(206, 204, 204);
     align-items: center;
@@ -39,7 +39,6 @@
     color: red;
   }
   
-  
    .header-favorites{
     margin-top: 10px;
     display: flex;
@@ -47,10 +46,10 @@
     justify-content:space-between;
   }
   .header-favorites span{
-    padding:8px 12px;
+    padding:5px 10px;
     border:1px solid red;
     background-color:rgb(236, 61, 61);
-    font-size: 500;
+    font-size: 12pt;
     border-radius:4px;
     display: flex;
     align-items: center;
@@ -97,6 +96,7 @@
   .link-favorites span{
     align-items: center;
     display: flex;
+    text-align: center;
   }
   
   .link-favorites:hover{
@@ -104,7 +104,13 @@
     border: 1px solid rgb(29, 100, 255);
     color:#fff;
   }
-  @media(max-width:900px){
+
+  @media(max-width:1200px){
+    .wrapp-favorites{
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  @media(max-width:992px){
     .wrapp-favorites{
       grid-template-columns:auto auto auto;
     }
@@ -115,13 +121,10 @@
     }
     .card-favorites h3{
       font-size: 16px;
-  
     }
-  
   }
-  @media(max-width:450px){
+  @media(max-width:576px){
     .wrapp-favorites{
-  
       grid-template-columns:  auto;
     }
     h2.fav{
@@ -131,5 +134,4 @@
       padding:6px 8px;
       font-size: 14px;
     }
-  
   }
