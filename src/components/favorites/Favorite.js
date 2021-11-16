@@ -30,8 +30,7 @@ export const Favorite = () => {
         <h2 className="fav"> Your Favorite : </h2>
         {state.favorites.favItems.length > 0 ? (
           <span onClick={() => handleDeleteAll(state?.favorites.favItems)}>
-            <BsTrash />
-            Delete All
+            <BsTrash /> Delete All
           </span>
         ) : (
           ""

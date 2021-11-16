@@ -3,14 +3,14 @@ import "./topbyinterest.css";
 import { Link } from "react-router-dom";
 
 const TopByInterest = ({ interest }) => {
-  console.log(interest);
+  // console.log(interest);
   return (
-    <tr className="list-interest">
-      <Link to={`/phone/${interest.slug}`} className="link-interest">
-        <p>{interest.phone_name}</p>
-        <p>{interest.hits}</p>
-      </Link>
-    </tr>
+    <Link to={`/phone/${interest.slug}`} className="link-interest">
+      <tr className="list-interest">
+        <td>{interest.phone_name}</td>
+        <td>{interest.hits}</td>
+      </tr>
+    </Link>
   );
 };
 

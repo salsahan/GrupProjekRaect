@@ -4,7 +4,6 @@ import Phone from "./../phone/Phone";
 import TopByInterest from "./../top-by-interest/TopByInterest";
 import TopByFans from "./../top-by-fans/TopByFans";
 import Brands from "./../brands/Brands";
-import xiaomi from "../../images/Xiaomi.jpeg";
 import { useStateContext } from "../../context/StateContextProvider";
 import { Link, useNavigate } from "react-router-dom";
 const Layout = () => {
@@ -101,29 +100,33 @@ const Layout = () => {
         <div className="right">
           <div className="thumbnail">
             <div className="thumbnail-left">
-              <Link to="/phone/xiaomi_redmi_note_11_pro-11159">
-                <img src={xiaomi} alt="xiaomi" />
-                <p>Xiamoi Review</p>
+              <Link to="/phone/xiaomi_mi_11-10656">
+                <img 
+                  src="https://cdn.medcom.id/images/library/images/Xiaomi%20Mi%2011%20Lite%20(2).jpeg" 
+                  alt="xiaomi"
+                />
+                <p>Xiaomi Mi 11</p>
               </Link>
             </div>
             <div className="thumbnail-right">
-              <Link to="/phone/apple_iphone_13_pro_max-11089" className="top">
+            <div className="top">
+              <Link to="/phone/apple_iphone_13-11103" >
                 <img
                   src="https://cdn.pocket-lint.com/r/s/970x/assets/images/158444-phones-review-apple-iphone-13-review-images-image1-clh15n2ocg.jpg"
-                  alt="samsung"
+                  alt="apple"
                 />
-                {/* apple_iphone_13_pro_max-11089 */}
-                <p>Iphone 12 Review</p>
+                <p>Apple iPhone 13</p>
               </Link>
-              <Link to="/phone/oppo_k9s-11151" className="bottom">
+              </div>
+              <div className="bottom">
+                <Link to="/phone/fairphone_4-11136" >
                 <img
                   src="https://im.indiatimes.in/content/2021/Oct/Article-Body---2021-10-01T131920305_6156bdaed77ca.jpg"
-                  class="card-img"
-                  alt="images"
+                  alt="fairphone"
                 />
-                {/* oppo_k9s-11151 */}
-                <p>Oppo Review</p>
+                <p>Fairphone 4</p>
               </Link>
+              </div>
             </div>
           </div>
           <div className="section-latest">Latest Device</div>
