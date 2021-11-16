@@ -73,6 +73,8 @@ const StateContextProvider = ({ children }) => {
 
         setResult(brandJson);
         setLoading(false);
+      }else{
+        setResult(undefined)
       }
     } catch (err) {
       console.log(err);
