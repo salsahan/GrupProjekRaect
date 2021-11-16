@@ -45,7 +45,7 @@
     box-sizing: border-box;
     width:70%;
     color: dodgerblue;
-    border: 1px solid rgbdodgerblue;
+    border: 1px solid dodgerblue;
     transition:.5s ease-in-out;
   }
   .fav-phone-latest:hover {

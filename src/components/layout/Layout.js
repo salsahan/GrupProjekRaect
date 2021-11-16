@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./layout.css";
 import Phone from "./../phone/Phone";
-import TopByInterest from "./../top-by-interest/TopByInterest";
-import TopByFans from "./../top-by-fans/TopByFans";
+import TopByInterest from "../top-by/TopByInterest";
+import TopByFans from "../top-by/TopByFans";
 import Brands from "./../brands/Brands";
 import { useStateContext } from "../../context/StateContextProvider";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Layout = () => {
   const [topByInterest, setTopByInterest] = useState();
   const [topByFans, setTopByFans] = useState();
   const [latestDevice, setLatestDevice] = useState();
   const { searchInput } = useStateContext();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // top by interest
   useEffect(() => {
@@ -72,8 +72,8 @@ const Layout = () => {
               <thead className="title">Top By Daily Interest</thead>
               <tbody>
                 <tr className="phone">
-                  <p>Phone Name</p>
-                  <p>Hits</p>
+                  <th>Phone Name</th>
+                  <th>Hits</th>
                 </tr>
                 {topByInterest?.data?.phones?.map((interest) => (
                   <TopByInterest interest={interest} key={interest.slug} />
@@ -86,8 +86,8 @@ const Layout = () => {
               <thead className="title">Top By Fans</thead>
               <tbody>
                 <tr className="phone">
-                  <p>Phone Name</p>
-                  <p>Favorites</p>
+                  <th>Phone Name</th>
+                  <th>Favorites</th>
                 </tr>
                 {topByFans?.data?.phones?.map((fans, index) => (
                   <TopByFans fans={fans} key={index} />

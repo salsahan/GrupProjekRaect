@@ -1,0 +1,19 @@
+.list {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.link-top{
+  text-decoration: none;
+  display: flex;
+  padding:15px 0px;
+  border-top:1px solid grey;
+  color:rgb(105, 89, 89);
+}
+.link-top:hover {
+    color:blue;
+}

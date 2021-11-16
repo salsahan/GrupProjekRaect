@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Layout from "./components/layout/Layout";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import DetailPhone from "./components/detail-phone/DetailPhone";
 import { Favorite } from "./components/favorites/Favorite";
 // import Brands from "./components/brands/Brands";
