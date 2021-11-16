@@ -31,13 +31,12 @@ const Brands = () => {
     <div className="container-brand">
       {results?.status === undefined ? (
         <img
-          width="80%"
+          width="60%"
           src={NotFound}
           alt="not found.svg"
           style={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
             position: "absolute",
           }}
         />
