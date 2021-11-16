@@ -1,0 +1,198 @@
+.container{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .container .left{
+    width:25%;
+    display: flex;
+    margin-right: 30px;
+    position: relative;
+    flex-direction: column;
+  
+  }
+  /* daily interest */
+  .container .left .daily-interest{
+    height:550px;
+    margin-bottom: 30px;
+  }
+  
+  table{
+    width:100%;
+    padding:8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,05);
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .phone{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    border-bottom:2px solid #000;
+    margin-bottom: 14px;
+  }
+  
+  /* end daily interest */
+  
+  .container .left .fans{
+    height:500px;
+    margin-top:190px;
+  }
+  .container .right{
+    width:75%;
+    height:60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .right .thumbnail{
+    width: 100%;
+    display: flex;
+  }
+  .container .right .thumbnail .thumbnail-left{
+    width:70%;
+    height: 60vh;
+    display: block;
+    margin-right: 6px;
+  }
+  .container .right .thumbnail .thumbnail-left img{
+    width: 100%;
+    height:65vh;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: .5s;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+  }
+  .container .right .thumbnail .thumbnail-left img:hover{
+      transform: scale(1.02);
+  }
+  
+  .container .right .thumbnail .thumbnail-left p{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    margin-top: -50px;
+    margin-left:20px;
+  }
+  .container .right .thumbnail .thumbnail-right{
+    width:30%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* .container .right .thumbnail .thumbnail-right .links-layout {
+    z-index: 999;
+  } */
+  
+  .container .right .thumbnail .thumbnail-right .top img,
+  .container .right .thumbnail .thumbnail-right .bottom img{
+    width: 100%;
+    border: none;
+    height: 31.8vh;
+    border-radius: 4px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    object-fit: cover;
+    margin-bottom: 4px;
+  }
+  .container .right .thumbnail .thumbnail-right img:hover{
+    transform: scale(1.02);
+  }
+  .container .right .thumbnail .thumbnail-right .top p,
+  .container .right .thumbnail .thumbnail-right .bottom p{
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    margin-top: -40px;
+    margin-left:20px;
+  }
+  /*
+  .container .right .thumbnail .thumbnail-right span{
+    width: 100%;
+    border: 1px solid black;
+    height:100%;
+  }
+  .container .right .thumbnail .thumbnail-right p{
+    width: 100%;
+    border: 1px solid black;
+    height:100%;
+  
+  
+  } */
+  
+  .section-latest{
+    margin-top:50px;
+    width: 100%;
+    font-weight: 500;
+    padding:18px 12px;
+    font-size:24px;
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .phone-component{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap:30px;
+  }
+  
+  @media(max-width:900px){
+    .container .left{
+      display:none;
+    }
+    .container .right{
+      width: 100%;
+    }
+    .container .right .thumbnail .thumbnail-left{
+      width:60%;
+  
+    }
+    .container .right .thumbnail .thumbnail-right{
+      width:40%;
+  
+    }
+  }
+  @media(max-width:768px){
+  .phone-component{
+    grid-template-columns:   auto auto auto;
+  }
+  }
+  @media(max-width:450px){
+    .container .right .thumbnail{
+      flex-direction: column;
+      width: 100%;
+    }
+    .container .right .thumbnail .thumbnail-left{
+      width:100%;
+      margin-right: 0;
+    }
+    .container .right .thumbnail .thumbnail-right{
+      width:100%;
+      margin-top: 40px;
+    }
+    .section-latest{
+      width: 100%;
+    }
+    .phone-component{
+      grid-template-columns:  auto;
+    }
+  }
+  
