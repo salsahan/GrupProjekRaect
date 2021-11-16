@@ -1,0 +1,135 @@
+.wrapp-favorites{
+    width:100%;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto auto  auto;
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
+  .card-favorites{
+    width:100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: center;
+    border:1px solid rgb(206, 204, 204);
+    align-items: center;
+    border-radius:8px;
+    padding:10px ;
+  }
+  .card-favorites span.close {
+    width:50%;
+    display: flex;
+    justify-content:center;
+    border: 1px solid rgb(243, 83, 83);
+    align-items:center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgb(241, 68, 68);
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+    padding:8px 12px;
+    transition: .5s ease-in-out;
+  }
+  .card-favorites span.close:hover {
+    background-color:transparent;
+    color: red;
+  }
+  
+  
+   .header-favorites{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  .header-favorites span{
+    padding:8px 12px;
+    border:1px solid red;
+    background-color:rgb(236, 61, 61);
+    font-size: 500;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition:.5s ease-in-out;
+    color: white;
+  }
+  .header-favorites span:hover {
+    background-color:transparent;
+    color: red;
+  }
+  
+  
+  .card-favorites img{
+    width:90%;
+    height: 300px;
+    object-fit: contain;
+  }
+  .card-favorites h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .card-favorites p{
+    font-size:16px;
+    margin-top: -20px;
+    text-align: center;
+  }
+  .link-favorites{
+    text-decoration: none;
+    border-radius:4px;
+    color:rgb(29, 100, 255);
+    font-weight:500 ;
+    padding:8px 12px;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(29, 100, 255);
+    box-sizing: border-box;
+    font-size: 16px;
+    transition:.5s ease-in-out;
+  }
+  .link-favorites span{
+    align-items: center;
+    display: flex;
+  }
+  
+  .link-favorites:hover{
+    background-color:rgb(29, 100, 255);
+    border: 1px solid rgb(29, 100, 255);
+    color:#fff;
+  }
+  @media(max-width:900px){
+    .wrapp-favorites{
+      grid-template-columns:auto auto auto;
+    }
+  }
+  @media(max-width:768px){
+    .wrapp-favorites{
+      grid-template-columns: auto auto;
+    }
+    .card-favorites h3{
+      font-size: 16px;
+  
+    }
+  
+  }
+  @media(max-width:450px){
+    .wrapp-favorites{
+  
+      grid-template-columns:  auto;
+    }
+    h2.fav{
+      font-size:16px;
+    }
+    .header-favorites span{
+      padding:6px 8px;
+      font-size: 14px;
+    }
+  
+  }

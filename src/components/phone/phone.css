@@ -1,0 +1,65 @@
+.wrapp-phone{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border-radius:4px;
+    transition:.5s;
+    padding: 10px 0;
+    align-items: center;
+  }
+  .wrapp-phone:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #fff;
+    box-shadow: 2px 2px 9px rgba(0,0,0,0.5)
+  
+  }
+  .wrapp-phone img{
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+  }
+  .wrapp-phone p{
+    font-size: 16px;
+    font-weight: bold;
+    height:40px;
+    text-align: center;
+  }
+  .wrapp-phone p:hover{
+    color:blue;
+  }
+  
+  .link{
+    text-decoration: none!important;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fav-phone-latest{
+    font-size:12px;
+    text-align: center;
+    font-weight:500;
+    padding:2px 4px;
+    border-radius:4px;
+    box-sizing: border-box;
+    width:70%;
+    color:rgb(29, 100, 255);
+    border: 1px solid rgb(29, 100, 255);
+    transition:.5s ease-in-out;
+  
+  }
+  .fav-phone-latest:hover {
+    background-color:rgb(29, 100, 255);
+  
+    color:#fff;
+  }
+  
+  @media(max-width:450px){
+    .fav-phone-latest{
+      padding:8px 4px;
+  
+    }
+  }
+  
+  
