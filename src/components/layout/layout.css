@@ -1,0 +1,198 @@
+.container{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .container .left{
+    width:25%;
+    display: flex;
+    margin-right: 30px;
+    position: relative;
+    flex-direction: column;
+  
+  }
+  /* daily interest */
+  .container .left .daily-interest{
+    margin-bottom: 30px;
+  }
+  
+  table{
+    width:100%;
+    padding:8px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,05);
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .phone{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    border-bottom:2px solid #000;
+    margin: 10px 0px -1px 0px;
+  }
+  
+  /* end daily interest */
+  
+  /* .container .left .fans{
+    height:500px;
+    margin-top:190px;
+  } */
+  .container .right{
+    width:75%;
+    height:60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .right .thumbnail{
+    width: 100%;
+    display: flex;
+  }
+  .container .right .thumbnail .thumbnail-left{
+    width:65%;
+    height: 63.6vh;
+    border-radius: 4px;
+    display: block;
+    margin-right: 4px;
+    overflow: hidden;
+  }
+  .container .right .thumbnail .thumbnail-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+  }
+  .container .right .thumbnail .thumbnail-left img:hover{
+    filter: brightness(65%);
+    transform: scale(1.10);
+  }
+  
+  .container .right .thumbnail .thumbnail-left p{
+    display: block;
+    font-size: 20pt;
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    margin-top: -70px;
+    margin-left:20px;
+  }
+  .container .right .thumbnail .thumbnail-right{
+    width:35%;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* .container .right .thumbnail .thumbnail-right .links-layout {
+    z-index: 999;
+  } */
+  .container .right .thumbnail .thumbnail-right .top ,
+  .container .right .thumbnail .thumbnail-right .bottom {
+    width: 100%;
+    height: 50%;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  .container .right .thumbnail .thumbnail-right img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  }
+  .container .right .thumbnail .thumbnail-right img:hover{
+    filter: brightness(65%);
+    transform: scale(1.10);
+  }
+  .container .right .thumbnail .thumbnail-right p{
+    font-size: 18pt;
+    font-weight: bold;
+    color:#fff;
+    position: absolute;
+    margin-top: -70px;
+    margin-left:20px;
+  }
+  /*
+  .container .right .thumbnail .thumbnail-right span{
+    width: 100%;
+    border: 1px solid black;
+    height:100%;
+  }
+  .container .right .thumbnail .thumbnail-right p{
+    width: 100%;
+    border: 1px solid black;
+    height:100%;
+  
+  
+  } */
+  
+  .section-latest{
+    margin-top:30px;
+    width: 100%;
+    font-weight: 500;
+    padding:18px 12px;
+    font-size:24px;
+    background-color: rgb(235, 235, 235);
+  }
+  
+  .phone-component{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap:30px;
+  }
+  
+  @media(max-width:1200px){
+    .container .left{
+      display:none;
+    }
+    .container .right{
+      width: 100%;
+    }
+    .container .right .thumbnail .thumbnail-left{
+      width:60%;
+    }
+    .container .right .thumbnail .thumbnail-right{
+      width:40%;
+    }
+  }
+  @media(max-width:992px){
+    .phone-component{
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  @media(max-width:768px){
+    .phone-component{
+      grid-template-columns: auto auto auto;
+    }
+  }
+  @media(max-width:576px){
+    .container .right .thumbnail{
+      display: none;
+    }
+    .section-latest{
+      width: 100%;
+      margin-top:0px;
+    }
+    .phone-component{
+      grid-template-columns: auto auto;
+    }
+  }
+  
